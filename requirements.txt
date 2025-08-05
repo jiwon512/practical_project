@@ -20,6 +20,7 @@ joblib==1.5.1
 jupyter_client==8.6.3
 jupyter_core==5.8.1
 kiwisolver==1.4.8
+lightgbm==4.6.0
 matplotlib==3.10.5
 matplotlib-inline==0.1.7
 meteostat==1.7.4

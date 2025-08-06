@@ -26,7 +26,7 @@ st.markdown("---")
 def load_data():
     """데이터 로드 및 전처리"""
     try:
-        # 데이터 로드 (상대 경로)
+        # 데이터 로드 (루트에서 실행되므로 csv/ 폴더 직접 접근)
         df = pd.read_csv("csv/스마트팜_수정데이터.csv", encoding="cp949")
         
         # 날짜 컬럼 변환

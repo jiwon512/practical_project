@@ -26,8 +26,8 @@ st.markdown("---")
 def load_data():
     """데이터 로드 및 전처리"""
     try:
-        # 데이터 로드 (상대 경로)
-        df = pd.read_csv("csv/스마트팜_수정데이터.csv", encoding="cp949")
+        # 데이터 로드
+        df = pd.read_csv("/Users/Jiwon/Documents/GitHub/practical_project/csv/스마트팜_수정데이터.csv", encoding="cp949")
         
         # 날짜 컬럼 변환
         date_cols = ['착유시작일시', '착유종료일시']
@@ -172,6 +172,15 @@ def predict_farm_yield(pipeline, farm_id, date, feature_columns):
         st.error(f"예측 오류: {e}")
         return None
 
+def predict_individual_yield(pipeline, individual_data):
+    """개체별 착유량 예측"""
+    try:
+        prediction = pipeline.predict(individual_data)[0]
+        return prediction
+    except Exception as e:
+        st.error(f"예측 오류: {e}")
+        return None
+
 def main():
     # 데이터 로드
     with st.spinner("데이터를 로드하는 중..."):
@@ -279,6 +288,66 @@ def main():
                             title=f"농장 {selected_farm} 착유량 분포"
                         )
                         st.plotly_chart(fig, use_container_width=True)
+    
+    else:  # 개체별 예측
+        st.header("🐄 개체별 착유량 예측")
+        
+        # 개체 선택
+        farm_ids = sorted(df_clean['농장아이디'].unique())
+        selected_farm = st.selectbox("농장 선택", farm_ids)
+        
+        # 선택된 농장의 개체들
+        farm_individuals = df_clean[df_clean['농장아이디'] == selected_farm]['개체번호'].unique()
+        selected_individual = st.selectbox("개체 선택", sorted(farm_individuals))
+        
+        # 개체 정보 표시
+        individual_data = df_clean[df_clean['개체번호'] == selected_individual]
+        
+        if not individual_data.empty:
+            st.subheader("📋 개체 정보")
+            
+            col1, col2, col3, col4 = st.columns(4)
+            with col1:
+                st.metric("평균 착유량", f"{individual_data['착유량'].mean():.1f}L")
+            with col2:
+                st.metric("총 착유 횟수", len(individual_data))
+            with col3:
+                st.metric("평균 착유시간", f"{individual_data['착유시간'].mean():.1f}분")
+            with col4:
+                st.metric("나이", f"{individual_data['나이'].iloc[0]}세")
+            
+            # 개체별 착유량 추이
+            fig = px.line(
+                individual_data.sort_values('착유시작일시'),
+                x='착유시작일시',
+                y='착유량',
+                title=f"개체 {selected_individual} 착유량 추이"
+            )
+            st.plotly_chart(fig, use_container_width=True)
+            
+            # 예측 실행
+            if st.button("🚀 개체별 예측 실행", type="primary"):
+                with st.spinner("예측 중..."):
+                    # 최근 데이터로 예측
+                    recent_data = individual_data.iloc[-1:].copy()
+                    prediction = predict_individual_yield(pipeline, recent_data)
+                    
+                    if prediction is not None:
+                        st.success("✅ 예측 완료!")
+                        
+                        col1, col2 = st.columns(2)
+                        with col1:
+                            st.metric(
+                                label="다음 착유 예측량",
+                                value=f"{prediction:.1f}L",
+                                delta=f"{prediction - individual_data['착유량'].mean():.1f}L"
+                            )
+                        
+                        with col2:
+                            st.metric(
+                                label="개체 번호",
+                                value=selected_individual
+                            )
     
     # 모델 정보
     st.sidebar.markdown("---")

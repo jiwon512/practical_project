@@ -1,0 +1,264 @@
+2025-08-06,10:09:05 [INFO] (app.py:app:316): Parsing config file /Users/Jiwon/Documents/GitHub/practical_project/wonv/lib/python3.11/site-packages/tabpy/tabpy_server/app/../common/default.conf
+2025-08-06,10:09:05 [DEBUG] (app.py:app:277): Parameter port set to "9004" from default value
+2025-08-06,10:09:05 [DEBUG] (app.py:app:277): Parameter server_version set to "2.13.0" from default value
+2025-08-06,10:09:05 [DEBUG] (app.py:app:277): Parameter evaluate_enabled set to "True" from default value
+2025-08-06,10:09:05 [DEBUG] (app.py:app:277): Parameter evaluate_timeout set to "30" from default value
+2025-08-06,10:09:05 [DEBUG] (app.py:app:277): Parameter upload_dir set to "/Users/Jiwon/Documents/GitHub/practical_project/wonv/lib/python3.11/site-packages/tabpy/tmp/query_objects" from default value
+2025-08-06,10:09:05 [DEBUG] (app.py:app:277): Parameter transfer_protocol set to "http" from default value
+2025-08-06,10:09:05 [DEBUG] (app.py:app:284): Parameter certificate_file is not set
+2025-08-06,10:09:05 [DEBUG] (app.py:app:284): Parameter key_file is not set
+2025-08-06,10:09:05 [DEBUG] (app.py:app:277): Parameter minimum_tls_version set to "TLSv1_2" from default value
+2025-08-06,10:09:05 [DEBUG] (app.py:app:277): Parameter state_file_path set to "/Users/Jiwon/Documents/GitHub/practical_project/wonv/lib/python3.11/site-packages/tabpy/tabpy_server" from default value
+2025-08-06,10:09:05 [DEBUG] (app.py:app:277): Parameter static_path set to "/Users/Jiwon/Documents/GitHub/practical_project/wonv/lib/python3.11/site-packages/tabpy/tabpy_server/static" from default value
+2025-08-06,10:09:05 [DEBUG] (app.py:app:284): Parameter TABPY_PWD_FILE is not set
+2025-08-06,10:09:05 [DEBUG] (app.py:app:277): Parameter log_request_context set to "false" from default value
+2025-08-06,10:09:05 [DEBUG] (app.py:app:277): Parameter max_request_size_in_mb set to "100" from default value
+2025-08-06,10:09:05 [DEBUG] (app.py:app:277): Parameter gzip_enabled set to "True" from default value
+2025-08-06,10:09:05 [DEBUG] (app.py:app:277): Parameter arrow_enabled set to "False" from default value
+2025-08-06,10:09:05 [DEBUG] (app.py:app:277): Parameter arrowflight_port set to "13622" from default value
+2025-08-06,10:09:05 [INFO] (app.py:app:381): Setting max request size to 104857600 bytes
+2025-08-06,10:09:05 [DEBUG] (app.py:app:539): File /Users/Jiwon/Documents/GitHub/practical_project/wonv/lib/python3.11/site-packages/tabpy/tabpy_server/state.ini not found, creating from template /Users/Jiwon/Documents/GitHub/practical_project/wonv/lib/python3.11/site-packages/tabpy/tabpy_server/state.ini.template...
+2025-08-06,10:09:05 [INFO] (app.py:app:545): Loading state from state file /Users/Jiwon/Documents/GitHub/practical_project/wonv/lib/python3.11/site-packages/tabpy/tabpy_server/state.ini
+2025-08-06,10:09:05 [DEBUG] (app.py:app:397): Static pages folder set to "/Users/Jiwon/Documents/GitHub/practical_project/wonv/lib/python3.11/site-packages/tabpy/tabpy_server/static"
+2025-08-06,10:09:47 [INFO] (app.py:app:510): Password file is not specified: Authentication is not enabled
+2025-08-06,10:09:47 [INFO] (app.py:app:429): Call context logging is disabled
+2025-08-06,10:09:47 [INFO] (app.py:app:197): Initializing TabPy...
+2025-08-06,10:09:47 [DEBUG] (selector_events.py:selector_events:54): Using selector: KqueueSelector
+2025-08-06,10:09:47 [INFO] (callbacks.py:callbacks:43): Initializing TabPy Server...
+2025-08-06,10:09:47 [DEBUG] (state.py:state:628): Loading option 'None' from section [Query Objects Service Versions]...
+2025-08-06,10:09:47 [DEBUG] (state.py:state:650): Returning value '[]'
+2025-08-06,10:09:47 [DEBUG] (state.py:state:148): Collected endpoints: {}
+2025-08-06,10:09:47 [INFO] (app.py:app:201): Done initializing TabPy.
+2025-08-06,10:09:47 [INFO] (callbacks.py:callbacks:64): Initializing models...
+2025-08-06,10:09:47 [DEBUG] (state.py:state:628): Loading option 'None' from section [Query Objects Service Versions]...
+2025-08-06,10:09:47 [DEBUG] (state.py:state:650): Returning value '[]'
+2025-08-06,10:09:47 [DEBUG] (state.py:state:148): Collected endpoints: {}
+2025-08-06,10:09:47 [INFO] (app.py:app:167): Web service listening on port 9004
+2025-08-06,10:12:18 [INFO] (web.py:web:2407): 200 GET / (::1) 65.16ms
+2025-08-06,10:12:18 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2025-08-06,10:12:18 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2025-08-06,10:12:18 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2025-08-06,10:12:18 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2025-08-06,10:12:18 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2025-08-06,10:12:18 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2025-08-06,10:12:18 [DEBUG] (state.py:state:526): Collecting Access-Control-Allow-Origin from state file ...
+2025-08-06,10:12:18 [DEBUG] (state.py:state:628): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2025-08-06,10:12:18 [DEBUG] (state.py:state:650): Returning value ''
+2025-08-06,10:12:18 [DEBUG] (state.py:state:628): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2025-08-06,10:12:18 [DEBUG] (state.py:state:650): Returning value ''
+2025-08-06,10:12:18 [DEBUG] (state.py:state:628): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2025-08-06,10:12:18 [DEBUG] (state.py:state:650): Returning value ''
+2025-08-06,10:12:18 [DEBUG] (state.py:state:628): Loading option 'None' from section [Query Objects Service Versions]...
+2025-08-06,10:12:18 [DEBUG] (state.py:state:650): Returning value '[]'
+2025-08-06,10:12:18 [DEBUG] (state.py:state:148): Collected endpoints: {}
+2025-08-06,10:12:18 [INFO] (web.py:web:2407): 200 GET /endpoints (::1) 7.09ms
+2025-08-06,10:12:18 [INFO] (web.py:web:2407): 200 GET /tableau.png (::1) 7.47ms
+2025-08-06,10:12:18 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2025-08-06,10:12:18 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2025-08-06,10:12:18 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2025-08-06,10:12:18 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2025-08-06,10:12:18 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2025-08-06,10:12:18 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2025-08-06,10:12:18 [DEBUG] (state.py:state:526): Collecting Access-Control-Allow-Origin from state file ...
+2025-08-06,10:12:18 [DEBUG] (state.py:state:628): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2025-08-06,10:12:18 [DEBUG] (state.py:state:650): Returning value ''
+2025-08-06,10:12:18 [DEBUG] (state.py:state:628): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2025-08-06,10:12:18 [DEBUG] (state.py:state:650): Returning value ''
+2025-08-06,10:12:18 [DEBUG] (state.py:state:628): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2025-08-06,10:12:18 [DEBUG] (state.py:state:650): Returning value ''
+2025-08-06,10:12:18 [DEBUG] (state.py:state:628): Loading option 'Description' from section [Service Info]...
+2025-08-06,10:12:18 [DEBUG] (state.py:state:650): Returning value ''
+2025-08-06,10:12:18 [DEBUG] (state.py:state:628): Loading option 'Creation Time' from section [Service Info]...
+2025-08-06,10:12:18 [DEBUG] (state.py:state:650): Returning value '0'
+2025-08-06,10:12:18 [DEBUG] (state.py:state:628): Loading option 'Name' from section [Service Info]...
+2025-08-06,10:12:18 [DEBUG] (state.py:state:650): Returning value 'TabPy Server'
+2025-08-06,10:12:18 [INFO] (web.py:web:2407): 200 GET /info (::1) 1.54ms
+2025-08-06,10:12:19 [WARNING] (web.py:web:2407): 404 GET /favicon.ico (::1) 2.52ms
+2025-08-06,10:23:00 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2025-08-06,10:23:00 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2025-08-06,10:23:00 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2025-08-06,10:23:00 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2025-08-06,10:23:00 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2025-08-06,10:23:00 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2025-08-06,10:23:00 [DEBUG] (state.py:state:526): Collecting Access-Control-Allow-Origin from state file ...
+2025-08-06,10:23:00 [DEBUG] (state.py:state:628): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2025-08-06,10:23:00 [DEBUG] (state.py:state:650): Returning value ''
+2025-08-06,10:23:00 [DEBUG] (state.py:state:628): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2025-08-06,10:23:00 [DEBUG] (state.py:state:650): Returning value ''
+2025-08-06,10:23:00 [DEBUG] (state.py:state:628): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2025-08-06,10:23:00 [DEBUG] (state.py:state:650): Returning value ''
+2025-08-06,10:23:00 [DEBUG] (state.py:state:628): Loading option 'None' from section [Query Objects Service Versions]...
+2025-08-06,10:23:00 [DEBUG] (state.py:state:650): Returning value '[]'
+2025-08-06,10:23:00 [DEBUG] (state.py:state:148): Collected endpoints: {}
+2025-08-06,10:23:00 [INFO] (web.py:web:2407): 200 GET /endpoints (::1) 21.26ms
+2025-08-06,10:23:00 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2025-08-06,10:23:00 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2025-08-06,10:23:00 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2025-08-06,10:23:00 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2025-08-06,10:23:00 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2025-08-06,10:23:00 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2025-08-06,10:23:00 [INFO] (web.py:web:2407): 200 GET /configurations/endpoint_upload_destination (::1) 2.30ms
+2025-08-06,10:23:01 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2025-08-06,10:23:01 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2025-08-06,10:23:01 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2025-08-06,10:23:01 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2025-08-06,10:23:01 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2025-08-06,10:23:01 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2025-08-06,10:23:01 [DEBUG] (state.py:state:628): Loading option 'None' from section [Query Objects Service Versions]...
+2025-08-06,10:23:01 [DEBUG] (state.py:state:650): Returning value '[]'
+2025-08-06,10:23:01 [DEBUG] (state.py:state:148): Collected endpoints: {}
+2025-08-06,10:23:01 [DEBUG] (base_handler.py:base_handler:115): Adding endpoint "milk_yield_ensemble"
+2025-08-06,10:23:01 [DEBUG] (base_handler.py:base_handler:115): Adding/updating model milk_yield_ensemble...
+2025-08-06,10:23:01 [DEBUG] (state.py:state:628): Loading option 'None' from section [Query Objects Service Versions]...
+2025-08-06,10:23:01 [DEBUG] (state.py:state:650): Returning value '[]'
+2025-08-06,10:23:01 [DEBUG] (state.py:state:148): Collected endpoints: {}
+2025-08-06,10:23:01 [DEBUG] (state.py:state:628): Loading option 'None' from section [Query Objects Service Versions]...
+2025-08-06,10:23:01 [DEBUG] (state.py:state:650): Returning value '[]'
+2025-08-06,10:23:01 [DEBUG] (state.py:state:148): Collected endpoints: {}
+2025-08-06,10:23:01 [INFO] (state.py:state:657): Writing state to config
+2025-08-06,10:23:01 [DEBUG] (util.py:util:19): State path is /Users/Jiwon/Documents/GitHub/practical_project/wonv/lib/python3.11/site-packages/tabpy/tabpy_server
+2025-08-06,10:23:01 [INFO] (state.py:state:657): Writing state to config
+2025-08-06,10:23:01 [DEBUG] (util.py:util:19): State path is /Users/Jiwon/Documents/GitHub/practical_project/wonv/lib/python3.11/site-packages/tabpy/tabpy_server
+2025-08-06,10:23:01 [INFO] (base_handler.py:base_handler:115): Loading state from state file
+2025-08-06,10:23:01 [DEBUG] (state.py:state:628): Loading option 'None' from section [Query Objects Service Versions]...
+2025-08-06,10:23:01 [DEBUG] (state.py:state:650): Returning value '['milk_yield_ensemble']'
+2025-08-06,10:23:01 [DEBUG] (state.py:state:628): Loading option 'milk_yield_ensemble' from section [Query Objects Service Versions]...
+2025-08-06,10:23:01 [DEBUG] (state.py:state:650): Returning value '{"description": "TargetEncoder+VotingEnsemble \uae30\ubc18 \ucc29\uc720\ub7c9 \uc608\uce21", "type": "model", "version": 1, "dependencies": [], "target": null, "creation_time": 1754443381, "last_modified_time": 1754443381, "schema": null, "is_public": false}'
+2025-08-06,10:23:01 [DEBUG] (state.py:state:628): Loading option 'milk_yield_ensemble' from section [Query Objects Docstrings]...
+2025-08-06,10:23:01 [DEBUG] (state.py:state:650): Returning value '
+args Ã¬ÂÂÃ¬ÂÂÃ«ÂÂ Ã¬ÂÂÃ«ÂÂ FEATURE_ORDERÃ¬ÂÂ Ã«ÂÂÃ¬ÂÂ¼Ã­ÂÂ´Ã¬ÂÂ¼ Ã­ÂÂ©Ã«ÂÂÃ«ÂÂ¤.'
+2025-08-06,10:23:01 [DEBUG] (state.py:state:148): Collected endpoints: {'milk_yield_ensemble': {'description': 'TargetEncoder+VotingEnsemble 기반 착유량 예측', 'type': 'model', 'version': 1, 'dependencies': [], 'target': None, 'creation_time': 1754443381, 'last_modified_time': 1754443381, 'schema': None, 'is_public': False, 'docstring': '\nargs Ã\x83Â¬Ã\x82Â\x88Ã\x82Â\x9cÃ\x83Â¬Ã\x82Â\x84Ã\x82Â\x9cÃ\x83Â«Ã\x82Â\x8aÃ\x82Â\x94 Ã\x83Â¬Ã\x82Â\x95Ã\x82Â\x84Ã\x83Â«Ã\x82Â\x9eÃ\x82Â\x98 FEATURE_ORDERÃ\x83Â¬Ã\x82Â\x99Ã\x82Â\x80 Ã\x83Â«Ã\x82Â\x8fÃ\x82Â\x99Ã\x83Â¬Ã\x82Â\x9dÃ\x82Â¼Ã\x83Â\xadÃ\x82Â\x95Ã\x82Â´Ã\x83Â¬Ã\x82Â\x95Ã\x82Â¼ Ã\x83Â\xadÃ\x82Â\x95Ã\x82Â©Ã\x83Â«Ã\x82Â\x8bÃ\x82Â\x88Ã\x83Â«Ã\x82Â\x8bÃ\x82Â¤.'}}
+2025-08-06,10:23:01 [DEBUG] (state.py:state:628): Loading option 'None' from section [Query Objects Service Versions]...
+2025-08-06,10:23:01 [DEBUG] (state.py:state:650): Returning value '['milk_yield_ensemble']'
+2025-08-06,10:23:01 [DEBUG] (state.py:state:628): Loading option 'milk_yield_ensemble' from section [Query Objects Service Versions]...
+2025-08-06,10:23:01 [DEBUG] (state.py:state:650): Returning value '{"description": "TargetEncoder+VotingEnsemble \uae30\ubc18 \ucc29\uc720\ub7c9 \uc608\uce21", "type": "model", "version": 1, "dependencies": [], "target": null, "creation_time": 1754443381, "last_modified_time": 1754443381, "schema": null, "is_public": false}'
+2025-08-06,10:23:01 [DEBUG] (state.py:state:628): Loading option 'milk_yield_ensemble' from section [Query Objects Docstrings]...
+2025-08-06,10:23:01 [DEBUG] (state.py:state:650): Returning value '
+args Ã¬ÂÂÃ¬ÂÂÃ«ÂÂ Ã¬ÂÂÃ«ÂÂ FEATURE_ORDERÃ¬ÂÂ Ã«ÂÂÃ¬ÂÂ¼Ã­ÂÂ´Ã¬ÂÂ¼ Ã­ÂÂ©Ã«ÂÂÃ«ÂÂ¤.'
+2025-08-06,10:23:01 [DEBUG] (state.py:state:148): Collected endpoints: {'milk_yield_ensemble': {'description': 'TargetEncoder+VotingEnsemble 기반 착유량 예측', 'type': 'model', 'version': 1, 'dependencies': [], 'target': None, 'creation_time': 1754443381, 'last_modified_time': 1754443381, 'schema': None, 'is_public': False, 'docstring': '\nargs Ã\x83Â¬Ã\x82Â\x88Ã\x82Â\x9cÃ\x83Â¬Ã\x82Â\x84Ã\x82Â\x9cÃ\x83Â«Ã\x82Â\x8aÃ\x82Â\x94 Ã\x83Â¬Ã\x82Â\x95Ã\x82Â\x84Ã\x83Â«Ã\x82Â\x9eÃ\x82Â\x98 FEATURE_ORDERÃ\x83Â¬Ã\x82Â\x99Ã\x82Â\x80 Ã\x83Â«Ã\x82Â\x8fÃ\x82Â\x99Ã\x83Â¬Ã\x82Â\x9dÃ\x82Â¼Ã\x83Â\xadÃ\x82Â\x95Ã\x82Â´Ã\x83Â¬Ã\x82Â\x95Ã\x82Â¼ Ã\x83Â\xadÃ\x82Â\x95Ã\x82Â©Ã\x83Â«Ã\x82Â\x8bÃ\x82Â\x88Ã\x83Â«Ã\x82Â\x8bÃ\x82Â¤.'}}
+2025-08-06,10:23:01 [DEBUG] (python_service.py:python_service:39): Received request LoadObject
+2025-08-06,10:23:01 [DEBUG] (python_service.py:python_service:53): Returning response LoadInProgress(uri='milk_yield_ensemble', path='/Users/Jiwon/Documents/GitHub/practical_project/wonv/lib/python3.11/site-packages/tabpy/tabpy_server/query_objects/milk_yield_ensemble/1', version=1, is_update=False, endpoint_type='model')
+2025-08-06,10:23:01 [INFO] (python_service.py:python_service:89): Loading object:, URI=milk_yield_ensemble, URL=/Users/Jiwon/Documents/GitHub/practical_project/wonv/lib/python3.11/site-packages/tabpy/tabpy_server/query_objects/milk_yield_ensemble/1, version=1, is_updated=False
+2025-08-06,10:23:01 [INFO] (callbacks.py:callbacks:24): Waiting for object to be loaded...
+2025-08-06,10:23:01 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:01 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:01 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:01 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:02 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:02 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:02 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:02 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:02 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:02 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:02 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:02 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:02 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:02 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:02 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:02 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:03 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:03 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:03 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:03 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:03 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:03 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:03 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:03 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:03 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:03 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:03 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:03 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:03 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:03 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:04 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:04 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:04 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:04 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:04 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:04 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:04 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:04 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:04 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:04 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:04 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:04 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:04 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:04 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:05 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:05 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:05 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:05 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:05 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:05 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:05 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:05 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:05 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:05 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:05 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:05 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:05 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:05 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:05 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:05 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:05 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:05 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:06 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:06 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:06 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:06 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:06 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:06 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:06 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:06 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:07 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:07 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:07 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:07 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:07 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:07 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:07 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:07 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:07 [DEBUG] (__init__.py:__init__:342): matplotlib data path: /Users/Jiwon/Documents/GitHub/practical_project/wonv/lib/python3.11/site-packages/matplotlib/mpl-data
+2025-08-06,10:23:07 [DEBUG] (__init__.py:__init__:342): CONFIGDIR=/Users/Jiwon/.matplotlib
+2025-08-06,10:23:07 [DEBUG] (__init__.py:__init__:1560): interactive is False
+2025-08-06,10:23:07 [DEBUG] (__init__.py:__init__:1561): platform is darwin
+2025-08-06,10:23:07 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:07 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:07 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:07 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:08 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:08 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:08 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:08 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:08 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:08 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:08 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:08 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2025-08-06,10:23:08 [INFO] (query_object.py:query_object:80): Loaded query object "CustomQueryObject" successfully
+2025-08-06,10:23:08 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2025-08-06,10:23:08 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadSuccessful', 'reason': None}})
+2025-08-06,10:23:08 [INFO] (callbacks.py:callbacks:35): Object load status: LoadSuccessful
+2025-08-06,10:23:08 [DEBUG] (base_handler.py:base_handler:115): Endpoint milk_yield_ensemble successfully added
+2025-08-06,10:23:08 [DEBUG] (state.py:state:628): Loading option 'milk_yield_ensemble' from section [Query Objects Service Versions]...
+2025-08-06,10:23:08 [DEBUG] (state.py:state:650): Returning value '{"description": "TargetEncoder+VotingEnsemble \uae30\ubc18 \ucc29\uc720\ub7c9 \uc608\uce21", "type": "model", "version": 1, "dependencies": [], "target": null, "creation_time": 1754443381, "last_modified_time": 1754443381, "schema": null, "is_public": false}'
+2025-08-06,10:23:08 [DEBUG] (state.py:state:628): Loading option 'milk_yield_ensemble' from section [Query Objects Docstrings]...
+2025-08-06,10:23:08 [DEBUG] (state.py:state:650): Returning value '
+    args Ã¬ÂÂÃ¬ÂÂÃ«ÂÂ Ã¬ÂÂÃ«ÂÂ FEATURE_ORDERÃ¬ÂÂ Ã«ÂÂÃ¬ÂÂ¼Ã­ÂÂ´Ã¬ÂÂ¼ Ã­ÂÂ©Ã«ÂÂÃ«ÂÂ¤.
+    '
+2025-08-06,10:23:08 [DEBUG] (state.py:state:148): Collected endpoints: {'milk_yield_ensemble': {'description': 'TargetEncoder+VotingEnsemble 기반 착유량 예측', 'type': 'model', 'version': 1, 'dependencies': [], 'target': None, 'creation_time': 1754443381, 'last_modified_time': 1754443381, 'schema': None, 'is_public': False, 'docstring': '\n    args Ã\x83Â¬Ã\x82Â\x88Ã\x82Â\x9cÃ\x83Â¬Ã\x82Â\x84Ã\x82Â\x9cÃ\x83Â«Ã\x82Â\x8aÃ\x82Â\x94 Ã\x83Â¬Ã\x82Â\x95Ã\x82Â\x84Ã\x83Â«Ã\x82Â\x9eÃ\x82Â\x98 FEATURE_ORDERÃ\x83Â¬Ã\x82Â\x99Ã\x82Â\x80 Ã\x83Â«Ã\x82Â\x8fÃ\x82Â\x99Ã\x83Â¬Ã\x82Â\x9dÃ\x82Â¼Ã\x83Â\xadÃ\x82Â\x95Ã\x82Â´Ã\x83Â¬Ã\x82Â\x95Ã\x82Â¼ Ã\x83Â\xadÃ\x82Â\x95Ã\x82Â©Ã\x83Â«Ã\x82Â\x8bÃ\x82Â\x88Ã\x83Â«Ã\x82Â\x8bÃ\x82Â¤.\n    '}}
+2025-08-06,10:23:08 [INFO] (web.py:web:2407): 201 POST /endpoints (::1) 7208.74ms
+2025-08-06,10:23:09 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2025-08-06,10:23:09 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2025-08-06,10:23:09 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2025-08-06,10:23:09 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2025-08-06,10:23:09 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2025-08-06,10:23:09 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2025-08-06,10:23:09 [DEBUG] (state.py:state:526): Collecting Access-Control-Allow-Origin from state file ...
+2025-08-06,10:23:09 [DEBUG] (state.py:state:628): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2025-08-06,10:23:09 [DEBUG] (state.py:state:650): Returning value ''
+2025-08-06,10:23:09 [DEBUG] (state.py:state:628): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2025-08-06,10:23:09 [DEBUG] (state.py:state:650): Returning value ''
+2025-08-06,10:23:09 [DEBUG] (state.py:state:628): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2025-08-06,10:23:09 [DEBUG] (state.py:state:650): Returning value ''
+2025-08-06,10:23:09 [DEBUG] (base_handler.py:base_handler:115): Found models: {'milk_yield_ensemble': {'version': 1, 'type': 'model', 'status': 'LoadSuccessful', 'last_error': None}}
+2025-08-06,10:23:09 [INFO] (web.py:web:2407): 200 GET /status (::1) 17.52ms

@@ -1,10 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import pickle
 from datetime import datetime, timedelta
 import plotly.express as px
-import plotly.graph_objects as go
 from sklearn.model_selection import train_test_split
 from category_encoders import TargetEncoder
 from sklearn.ensemble import RandomForestRegressor, VotingRegressor, StackingRegressor
@@ -28,8 +26,8 @@ st.markdown("---")
 def load_data():
     """데이터 로드 및 전처리"""
     try:
-        # 데이터 로드 (상대 경로로 변경)
-        df = pd.read_csv("../csv/스마트팜_수정데이터.csv", encoding="cp949")
+        # 데이터 로드
+        df = pd.read_csv("/Users/Jiwon/Documents/GitHub/practical_project/csv/스마트팜_수정데이터.csv", encoding="cp949")
         
         # 날짜 컬럼 변환
         date_cols = ['착유시작일시', '착유종료일시']
@@ -115,20 +113,16 @@ def train_model(df_clean):
             X_enc, y, test_size=0.2, random_state=42
         )
         
-        # 개별 모델 정의
-        rf = RandomForestRegressor(n_estimators=200, random_state=42, n_jobs=-1)
-        xgb = XGBRegressor(n_estimators=200, random_state=42, n_jobs=-1)
-        lgb = LGBMRegressor(n_estimators=200, random_state=42, n_jobs=-1)
-        
-        # Voting 앙상블
-        voting = VotingRegressor([('rf', rf), ('xgb', xgb), ('lgb', lgb)])
-        voting.fit(X_train, y_train)
+        # 개별 모델 정의 (빠른 학습을 위해 n_estimators 줄임)
+        rf = RandomForestRegressor(n_estimators=100, random_state=42, n_jobs=-1)
+        xgb = XGBRegressor(n_estimators=100, random_state=42, n_jobs=-1)
+        lgb = LGBMRegressor(n_estimators=100, random_state=42, n_jobs=-1)
         
         # Stacking 앙상블
         stack = StackingRegressor(
             estimators=[('rf', rf), ('xgb', xgb), ('lgb', lgb)],
             final_estimator=Ridge(),
-            cv=5,
+            cv=3,  # 빠른 학습을 위해 CV 줄임
             n_jobs=-1
         )
         stack.fit(X_train, y_train)

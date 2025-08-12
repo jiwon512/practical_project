@@ -279,6 +279,7 @@ def main():
                             title=f"농장 {selected_farm} 착유량 분포"
                         )
                         st.plotly_chart(fig, use_container_width=True)
+                        
     
     # 모델 정보
     st.sidebar.markdown("---")
